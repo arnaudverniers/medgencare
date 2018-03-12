@@ -1,0 +1,10 @@
+{
+  "LOGIN" : {
+    "LABEL_LOGIN" : "Login",
+    "LABEL_REMEMBER" : "Remember me",
+    "LABEL_USERNAME" : "User",
+    "LABEL_PASSWORD" : "Password",
+    "ERROR_USERNAME" : "Please enter a username",
+    "ERROR_PASSWORD" : "Please enter a password"
+  }
+}

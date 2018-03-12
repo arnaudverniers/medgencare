@@ -1,0 +1,30 @@
+<form [formGroup]="loginForm">
+  <!-- Username -->
+  <mat-form-field>
+    <input matInput type="text" formControlName="username">
+    <mat-placeholder><mat-icon>face</mat-icon> {{ 'LOGIN.LABEL_USERNAME' | translate }}</mat-placeholder>
+    <button mat-button *ngIf="loginForm.get('username').valid" matSuffix mat-icon-button aria-label="Clear" (click)="loginForm.get('username').reset()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-error *ngIf="loginForm.get('username').invalid">
+      {{ 'LOGIN.ERROR_USERNAME' | translate }}
+    </mat-error>
+  </mat-form-field>
+  <!-- Password -->
+  <mat-form-field>
+    <input matInput type="password" formControlName="password">
+    <mat-placeholder><mat-icon>https</mat-icon> {{ 'LOGIN.LABEL_PASSWORD' | translate }}</mat-placeholder>
+    <button mat-button *ngIf="loginForm.get('password').valid" matSuffix mat-icon-button aria-label="Clear" (click)="loginForm.get('password').reset()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-error *ngIf="loginForm.get('password').invalid">
+      {{ 'LOGIN.ERROR_PASSWORD' | translate }}
+    </mat-error>
+  </mat-form-field>
+  <!-- Remember Me -->
+  <div class="mt6">
+    <mat-checkbox aria-labelledby="labelledbyave" aria-label="labelave" formControlName="remember">{{ 'LOGIN.LABEL_REMEMBER' | translate }}</mat-checkbox>
+  </div>
+  <!-- Button -->
+  <button mat-button>{{ 'LOGIN.LABEL_LOGIN' | translate }}</button>
+</form>

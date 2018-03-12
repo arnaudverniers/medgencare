@@ -1,0 +1,10 @@
+{
+  "LOGIN" : {
+    "LABEL_LOGIN" : "Inloggen",
+    "LABEL_REMEMBER" : "Onthoud me",
+    "LABEL_USERNAME" : "Gebruiker",
+    "LABEL_PASSWORD" : "Wachtwoord",
+    "ERROR_USERNAME" : "Vul alstublieft een gebruikersnaam in",
+    "ERROR_PASSWORD" : "Voer een wachtwoord in alstublieft"
+  }
+}

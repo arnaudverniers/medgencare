@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Thème pour les composants angular material design */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Règles générales au site */
+html { width: 100%; height:100%; overflow:hidden; }
+body { width: 100%; height:100%; font-family: Roboto,"Helvetica Neue",sans-serif !important; background-color: #F5DEB3; background-image: -webkit-linear-gradient(90deg, #DEB887, #F5DEB3); }
+
+/* Fix : Checkbox material has no margin when no label at start (using ngx-translate) */
+.mat-checkbox-inner-container-no-side-margin { margin-right: 8px !important; }
